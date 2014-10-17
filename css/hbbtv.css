@@ -1,57 +1,113 @@
 body {
-	overflow: hidden;
-	height: 720px; /* no tocar */
-	width: 1280px; /* no tocar */
-	color: #aaaaaa;
-	/*background-color: #07417D;*/
-	background-color: transparent;
-	margin: 0;
-	padding: 0;
-	font-size: 24px;
+    overflow: hidden;
+    height: 720px; /* no tocar */
+    width: 1280px; /* no tocar */
+    color: #aaaaaa;
+    /*background-color: #07417D;*/
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
 }
 
 #safe-area { /* no tocar */
-	width: 1024px;
-	height: 648px;
-	padding: 36px 128px;
-	margin: 0;
-	top: 0;
-	left: 0;
+    width: 1024px;
+    height: 648px;
+    padding: 36px 128px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
 }
 
 #video-container {
-	position: absolute; 
-	top: 100px; 
-	left: 400px; 
-	width: 600px; 
-	height: 450px;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 600px;
+    height: 450px;
 }
 
 #oipf-container {
-	visibility: hidden; 
-	height: 0; 
-	width: 0; 
-	position: absolute;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    position: absolute;
 }
 
 a:focus {
-	background-color: yellow;
+    background-color: yellow;
 }
 
 #red-button {
-	position:absolute;
-    left: 1100px;
-    top: 630px;
+    max-width: 50px !important;
+    max-height: 50px !important;
+}
+
+#button-message{
+    position: absolute;
+    bottom: 10%;
+    width: 21%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid white;
+    border-radius: 7px;
+
+    background-color: #38302c ;
+    color: #eeb527;
+    opacity: 0.9;
+
+}
+
+
+#sync-message{
+    background-color: #38302c ;
+    color: #eeb527;
+    opacity: 0.9;
+
+    width: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: 1px solid white;
+    border-radius: 7px;
+
+}
+
+#OK-message{
+
+    text-align: center;
+    background-color: #38302c ;
+    color: #eeb527;
+    opacity: 0.9;
+
+
+    width: 25%;
+    display: inline-flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid white;
+    border-radius: 7px;
+
+}
+
+#button-OK{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #div-log {
-	position:absolute; 
-	top: 550px; 
-	z-index:999; 
-	background:black; 
-	color:white;
+    position:absolute;
+    top: 550px;
+    z-index:999;
+    background:black;
+    color:white;
 }
 
 #log {
-	color:red;
+    color:red;
 }
