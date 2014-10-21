@@ -2,12 +2,16 @@
  * Created by Marcos on 21/10/14.
  */
 
-window.onload = function()
+function buttonController()
 {
-    setTimeout(
-        function()
-        {
-            
-        }, 5000);
+    window.setTimeout(goSleepButton(), 5000);
+
+
+
+
+}
+
+function goSleepButton()
+{
     $('button-message').hide();
 }
