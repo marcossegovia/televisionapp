@@ -8,13 +8,13 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/hbbtv.js"></script>
 	<script type="text/javascript" src="js/keycodes.js"></script>
-	<script type="text/javascript" src="js/handlekeycodes.js"></script> 
+	<script type="text/javascript" src="js/handlekeycodes.js"></script>
   </head>
 
   <body>
   
-    <!-- video container -->
-	<div id="video-container"></div>
+    
+	<!-- video container <div id="video-container"></div>  -->
 	
     <!-- oipf objects container -->
     <div id="oipf-container">
@@ -24,26 +24,10 @@
    
     <!-- place your code here -->
     <div id="safe-area">
-	  <p>Hello world!</p>
+
+	  <div id="button-message">Press <img id="red-button" src="assets/bt_red.png" /> to start application</div>
 	  
-	  <ul>
-		<li><a id="start" href="#">Test 1: start streaming video</a></li>
-		<li><a id="pause" href="#">Test 2: pause video</a></li>
-		<li><a id="play" href="#">Test 3: continue playing (1x)</a></li>
-		<li><a id="ffwd" href="#">Test 4: fast forward (2x)</a></li>
-		<li><a id="slowm" href="#">Test 5: slow motion (0.5x)</a></li>
-		<li><a id="play" href="#">Test 6: continue playing (1x)</a></li>
-		<li><a id="gopos30" href="#">Test 7: go to position 00:30</a></li>
-		<li><a id="gopos150" href="#">Test 8: go to position 02:30</a></li>
-		<li><a id="rewind" href="#">Test 9: rewind (-1x)</a></li>
-		<li><a id="stop" href="#">Test 10: stop video</a></li>	  
-      </ul>
 	  
-	  <!-- logger -->
-	  <div id="div-log"> LOG: <span id="log"></span></div>
-	  
-	  <!-- red button -->
-	  <img id="red-button" src="assets/bt_red.png" />
     </div>
 
   </body>
