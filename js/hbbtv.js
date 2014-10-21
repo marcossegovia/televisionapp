@@ -4,8 +4,8 @@ var APP;
 window.onload = function() {    
   try {	
 	initApp();
-    registerKeyEventListener();
-	initVideo();
+    //registerKeyEventListener();
+	//initVideo();
 
     alert('Hola');
     console.log('hola aqui estem');
@@ -46,7 +46,7 @@ function initApp() {
   showVideo(false);
  
   // set focus  
-  document.getElementById("start").focus();
+  //document.getElementById("start").focus();
 }
 
 function closeApp() {
