@@ -6,8 +6,8 @@ window.onload = function() {
 	initApp();
     registerKeyEventListener();
 	initVideo();
-    buttonController();
-      window.alert('Hola');
+
+    alert('Hola');
 	
 	$("#log").append("App initialized");
 	console.log("App initialized");
