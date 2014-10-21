@@ -8,6 +8,7 @@ window.onload = function() {
 	initVideo();
 
     alert('Hola');
+    console.log('hola aqui estem');
 	
 	$("#log").append("App initialized");
 	console.log("App initialized");
