@@ -3,7 +3,7 @@ var APP;
 
 window.onload = function() {
     console.log('hey!!');
-	//initApp();
+	initApp();
     //registerKeyEventListener();
 	//initVideo();
 
@@ -28,16 +28,13 @@ function initVideo() {
 }
 
 function initApp() {
-  try {
     APP = document.getElementById('oipfAppMan').getOwnerApplication(document);
     APP.show();
     //APP.activate();
-  } catch (e) {
     //console.log("ERROR: ", e);
-  }
     console.log('hey!!');
   // set keyset: red + green + yellow + blue + navigation + numeric
-  setKeyset(0x1 + 0x2 + 0x4 + 0x8 + 0x10 + 0x100); 
+  //setKeyset(0x1 + 0x2 + 0x4 + 0x8 + 0x10 + 0x100);
  
   // show video broadcast
   showVideo(false);
