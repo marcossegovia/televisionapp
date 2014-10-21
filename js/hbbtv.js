@@ -3,8 +3,7 @@ var APP;
 
 window.onload = function() {
     console.log('hey!!');
-  try {	
-	initApp();
+	//initApp();
     //registerKeyEventListener();
 	//initVideo();
 
@@ -13,9 +12,6 @@ window.onload = function() {
 	
 	$("#log").append("App initialized");
 	console.log("App initialized");
-  } catch (e) {
-    //console.log("ERROR: ", e);
-  }
 }
 
 function initVideo() {
