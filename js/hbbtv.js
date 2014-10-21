@@ -4,12 +4,9 @@ var APP;
 window.onload = function() {
     console.log('hey!!');
 	initApp();
-    //registerKeyEventListener();
-	//initVideo();
+    registerKeyEventListener();
+	initVideo();
 
-    alert('Hola');
-    console.log('hola aqui estem');
-	
 	$("#log").append("App initialized");
 	console.log("App initialized");
 }
@@ -18,12 +15,12 @@ function initVideo() {
   try {	
 	document.getElementById('video').bindToCurrentChannel();
   } catch (e) {
-    console.log("ERROR: ", e);
+    //console.log("ERROR: ", e);
   }
   try {
     document.getElementById('video').setFullScreen(false);
   } catch (e) {
-    console.log("ERROR: ", e);
+    //console.log("ERROR: ", e);
   }
 }
 
@@ -31,13 +28,15 @@ function initApp() {
     APP = document.getElementById('oipfAppMan').getOwnerApplication(document);
     APP.show();
     //APP.activate();
-    //console.log("ERROR: ", e);
-    console.log('hey!!');
-  // set keyset: red + green + yellow + blue + navigation + numeric
-  //setKeyset(0x1 + 0x2 + 0x4 + 0x8 + 0x10 + 0x100);
+
+   //set Keyset: red + green + yellow + blue + navigation + numeric
+   setKeyset(0x1 + 0x2 + 0x4 + 0x8 + 0x10 + 0x100);
  
   // show video broadcast
   showVideo(false);
+
+
+    redButtonWelcoming();
  
   // set focus  
   //document.getElementById("start").focus();
@@ -119,7 +118,7 @@ function showVideo(typ) {
     // ignore
   }
   var mtype = typ ? 'video/mp4' : 'video/broadcast';
-  var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 500px; top: 100px; width: 600px; height: 450px;"><'+'/object>';  
+  var ihtml = '<object id="video" type="'+mtype+'/object>';
   elem.style.left = '0px';
   elem.style.top = '0px';
   elem.style.width = '1280px';
