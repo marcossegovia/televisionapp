@@ -36,7 +36,7 @@ function initApp() {
     APP.show();
     //APP.activate();
   } catch (e) {
-    console.log("ERROR: ", e);
+    //console.log("ERROR: ", e);
   }
   
   // set keyset: red + green + yellow + blue + navigation + numeric
