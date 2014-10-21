@@ -4,6 +4,10 @@
 
 window.onload = function()
 {
-    wait(10000);
+    setTimeout(
+        function()
+        {
+            
+        }, 5000);
     $('button-message').hide();
 }
