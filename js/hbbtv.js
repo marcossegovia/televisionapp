@@ -1,7 +1,8 @@
 // globals
 var APP;
 
-window.onload = function() {    
+window.onload = function() {
+    console.log('hey!!');
   try {	
 	initApp();
     //registerKeyEventListener();
