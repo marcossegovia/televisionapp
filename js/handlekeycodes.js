@@ -3,6 +3,10 @@ function handleKeyCode(kc)
   //alert('key');
 	
   switch (kc) {
+
+    case kc.keyCode == 16:
+
+        break;
     case VK_RED:
 	  alert("red");
 	  $("#log").append("red!");
@@ -27,8 +31,9 @@ function handleKeyCode(kc)
 	  //alert("enter");
 	  $("#log").append("enter!");
 	  console.log("enter!");
-	  var aId = document.activeElement.getAttribute('id');	  
-	  runStep(aId);
+      window.location = "/televisionapp/templates/pag2.html";
+	  //var aId = document.activeElement.getAttribute('id');
+	  //runStep(aId);
 	  break;
 	case VK_UP:
 	  //alert("up");

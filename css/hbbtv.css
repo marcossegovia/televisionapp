@@ -10,6 +10,12 @@ body {
     font-size: 24px;
 }
 
+.areaQuad
+{
+    margin-left: 300px;
+    margin-top: 220px;
+}
+
 #safe-area { /* no tocar */
     width: 1024px;
     height: 648px;
@@ -46,7 +52,7 @@ a:focus {
 #button-message{
     position: absolute;
     bottom: 10%;
-    width: 21%;
+    width: 25%;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
@@ -66,7 +72,7 @@ a:focus {
     color: #eeb527;
     opacity: 0.9;
 
-    width: 25%;
+    width: 32%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 5%;
@@ -84,7 +90,7 @@ a:focus {
     opacity: 0.9;
 
 
-    width: 25%;
+    width: 32%;
     display: inline-flex;
     padding-left: 5%;
     padding-right: 5%;

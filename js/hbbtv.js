@@ -81,7 +81,7 @@ function registerKeyEventListener() {
     }
   }, false);
 }
-
+/*
 function runStep(name) {
   if (name=='start') {
     showVideo(true);
@@ -103,7 +103,7 @@ function runStep(name) {
     showVideo(false);
   }
 }
-
+*/
 function showVideo(typ) {
   var elem = document.getElementById('video-container');
   var oldvid = document.getElementById('video');
