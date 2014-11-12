@@ -35,3 +35,13 @@
   </body>
 
 </html>
+
+        <script>
+            function registerKeyEventListener() {
+                document.addEventListener("keydown", function(e) {
+                    if (handleKeyCode(e.keyCode)) {
+                        e.preventDefault();
+                    }
+                }, false);
+            }
+        </script>

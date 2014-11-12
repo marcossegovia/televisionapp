@@ -74,15 +74,8 @@ function setKeyset(mask) {
   }
 }
 
-function registerKeyEventListener() {
-  document.addEventListener("keydown", function(e) {
-    if (handleKeyCode(e.keyCode)) {
-      e.preventDefault();
-    }
-  }, false);
-}
 /*
-function runStep(name) {
+function Step(name) {
   if (name=='start') {
     showVideo(true);
   } else if (name=='pause') {

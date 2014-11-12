@@ -1,4 +1,4 @@
-function handleKeyCode(kc)
+function handleKeyCode3(kc)
 {
   //alert('key');
 	

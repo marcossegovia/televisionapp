@@ -100,3 +100,13 @@
   </body>
 
 </html>
+
+<script>
+    function registerKeyEventListener() {
+        document.addEventListener("keydown", function(e) {
+            if (handleKeyCode3(e.keyCode)) {
+                e.preventDefault();
+            }
+        }, false);
+    }
+</script>
