@@ -50,7 +50,8 @@ a:focus {
 }
 
 #button-message{
-    position: absolute;
+    /*position: absolute;
+    */
     bottom: 10%;
     width: 25%;
     padding-left: 1%;
@@ -160,6 +161,7 @@ a:focus {
     width: 600px;
     background-color: #38302c;
     color: #eeb527;
+    float: left;
 
 
 }
@@ -194,7 +196,7 @@ a:focus {
 }
 
 #info-video-selected{
-    margin-left: 50px;
+
     border: 1px solid white;
     border-radius: 7px;
     background-color: #38302c;
@@ -203,7 +205,8 @@ a:focus {
     padding-right: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
-    max-height: 500px;
+    height: 620px;
+    float:right;
 
 }
 
