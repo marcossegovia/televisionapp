@@ -9,4 +9,14 @@ window.onload = function() {
 
     $('#sync-message').html('SYNC NUMB: '+randomNumber);
     console.log(randomNumber);
+
+    registerKeyEventListener();
+}
+
+function registerKeyEventListener() {
+    document.addEventListener("keydown", function(e) {
+        if (handleKeyCode2(e.keyCode)) {
+            e.preventDefault();
+        }
+    }, false);
 }
