@@ -35,6 +35,12 @@
   </body>
 
   <script>
+
+      window.onload = function()
+      {
+          registerKeyEventListener();
+      }
+
       function registerKeyEventListener() {
           document.addEventListener("keydown", function(e) {
               if (handleKeyCode(e.keyCode)) {

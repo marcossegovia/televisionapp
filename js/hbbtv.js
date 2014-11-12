@@ -4,7 +4,6 @@ var APP;
 window.onload = function() {
     console.log('hey!!');
 	initApp();
-    registerKeyEventListener();
 	initVideo();
 
 	$("#log").append("App initialized");
