@@ -72,13 +72,6 @@
 
 
 
-
-
-
-
-
-
-
       <section id="buttons-menu">
         <div>
           <img id="button-buttons-menu" src="../assets/rojo.gif" /> <div id="text-button-menu-primer">Play Video</div>
@@ -99,14 +92,15 @@
 
   </body>
 
+  <script>
+      function registerKeyEventListener() {
+          document.addEventListener("keydown", function(e) {
+              if (handleKeyCode3(e.keyCode)) {
+                  e.preventDefault();
+              }
+          }, false);
+      }
+  </script>
+
 </html>
 
-<script>
-    function registerKeyEventListener() {
-        document.addEventListener("keydown", function(e) {
-            if (handleKeyCode3(e.keyCode)) {
-                e.preventDefault();
-            }
-        }, false);
-    }
-</script>
