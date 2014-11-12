@@ -31,7 +31,7 @@ function handleKeyCode(kc)
 	  //alert("enter");
 	  $("#log").append("enter!");
 	  console.log("enter!");
-      window.location = "/televisionapp/templates/pag2.html";
+      window.location = "/televisionapp/templates/pag3.html";
 	  //var aId = document.activeElement.getAttribute('id');
 	  //runStep(aId);
 	  break;

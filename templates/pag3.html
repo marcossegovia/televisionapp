@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//HbbTV//1.1.1//EN" "http://www.hbbtv.org/dtd/HbbTV-1.1.1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <title>HbbTV basic template</title>
+    <meta http-equiv="content-type" content="application/vnd.hbbtv.xhtml+xml;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/hbbtv.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/hbbtv.js"></script>
+	<script type="text/javascript" src="../js/keycodes.js"></script>
+	<!--<script type="text/javascript" src="../js/handlekeycodes.js"></script>-->
+    <script type="text/javascript" src="../js/controllerButton.js"></script>
+  </head>
+
+  <body>
+  
+    
+	<!-- video container -->
+	<div id="video-container"></div>
+
+    <!-- oipf objects container -->
+    <div id="oipf-container">
+        <object id="oipfAppMan" type="application/oipfApplicationManager"></object>
+        <object id="oipfConfig" type="application/oipfConfiguration"></object>
+    </div>
+   
+    <!-- place your code here -->
+    <div id="safe-area">
+
+      <section id="video-list">
+
+        <div id="video-block">
+          <img id="video-image-preview" src="../assets/YouTube.png">
+          <div id="video-info">
+            <div>Album name</div>
+            <div>Artist name</div>
+          </div>
+          <div id="video-info-votes">Votes: #</div>
+          <div id="video-nav-arrows">
+            <img id="video-arrows" src="../assets/up_ob.gif">
+            <img id="video-arrows" src="../assets/ok_ob.gif">
+            <img id="video-arrows" src="../assets/down_ob.gif">
+          </div>
+        </div>
+
+      </section>
+	  
+      <section id="info-video-selected">
+        <img src="../assets/YouTube.png" id="video-preview-small"> <!-- Això seria el video en petit -->
+        <div>
+          <div>
+            <ul>
+              <li>Alumne X</li>
+              <li>Alumne X</li>
+              <li>Alumne X</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Album Name:</li>
+              <li>Artist Name:</li>
+              <li>Votes:</li>
+              <li>Description:</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section id="buttons-menu">
+        <div>
+          <img id="button-buttons-menu" src="../assets/rojo.gif" /> <div id="text-button-menu-primer">Play Video</div>
+        </div>
+        <div>
+          <img id="button-buttons-menu-resto" src="../assets/verde.gif" /><div id="text-button-menu"> Pause Video </div>
+        </div>
+        <div>
+          <img id="button-buttons-menu-resto" src="../assets/amarillo.gif" /> <div id="text-button-menu">Stop Video</div>
+        </div>
+        <div>  
+          <img id="button-buttons-menu-resto" src="../assets/azul.gif" /> <div id="text-button-menu">Fullscreen</div>
+        </div>
+     </section>
+	  
+	  
+    </div>
+
+  </body>
+
+</html>
