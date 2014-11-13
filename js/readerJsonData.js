@@ -13,5 +13,5 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     $( "<ul/>", {
         "class": "item-video",
         html: videos.join( "" )
-    }).appendTo( "body" );
+    }).appendTo( "#video-list" );
 });
