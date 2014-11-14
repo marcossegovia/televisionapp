@@ -28,7 +28,7 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
             '<div>'+ videos[index]['name'] +'</div>' +
             '<div>'+ videos[index]['author'] +'</div>' +
             '</div>' +
-            '<div id="video-info-votes">Replays:'+ videos[index]['playbacks'] +'</div>' +
+            '<div id="video-info-votes">Rep:'+ videos[index]['playbacks'] +'</div>' +
             '</div>');
 
 
