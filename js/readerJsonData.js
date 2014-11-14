@@ -23,7 +23,7 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     for (index = 0; index < videos.length; index++)
     {
         $("#video-list").append('<div id="video-block">');
-        $("#video-list").append('<img id="video-image-preview" src="../assets'+ videos[index][imgName]+'">');
+        $("#video-list").append('<img id="video-image-preview" src="../assets'+ videos[index]['imgName']+'">');
         /*
 
          <div id="video-info">
