@@ -9,6 +9,8 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
     $.each( data.videos, function( key, val ) {
         videos[numVideo] = new Array();
+
+        
         videos[numVideo]['imgName']= "<li id='" + key + "'>" + val.imgName + "</li>";
         videos[numVideo]['urlVideo']= "<li id='" + key + "'>" + val.urlVideo + "</li>";
         videos[numVideo]['name']= "<li id='" + key + "'>" + val.name + "</li>" ;
@@ -16,10 +18,5 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
         videos[numVideo]['playbacks']= "<li id='" + key + "'>" + val.playbacks + "</li>" ;
         videos[numVideo]['author']= "<li id='" + key + "'>" + val.author + "</li>" ;
         numVideo++;
-    });
-
-    $( "<ul/>", {
-        "class": "item-video",
-        html: videos.join( "" )
     }).appendTo( "#video-list" );
 });
