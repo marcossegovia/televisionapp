@@ -24,6 +24,9 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     {
         $("#video-list").append('<div id="video-block">');
         $("#video-list").append('<img id="video-image-preview" src="../assets'+ videos[index]['imgName']+'.png">');
+        $("#video-list").append('</div>');
+
+
         /*
 
          <div id="video-info">
@@ -32,10 +35,9 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
          </div>
          <div id="video-info-votes">Votes: #</div>
          <div id="video-nav-arrows">
-         <img id="video-arrows" src="../assets/up_ob.gif">
-         <img id="video-arrows" src="../assets/ok_ob.gif">
-         <img id="video-arrows" src="../assets/down_ob.gif">
-         </div>
+             <img id="video-arrows" src="../assets/up_ob.gif">
+             <img id="video-arrows" src="../assets/ok_ob.gif">
+             <img id="video-arrows" src="../assets/down_ob.gif">
          </div>*/
     }
 });
