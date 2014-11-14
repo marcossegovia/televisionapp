@@ -31,5 +31,9 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
         videos[numVideo]['author']= "<li id='" + key + "'>" + val.author + "</li>" ;
         numVideo++;
     });
-    $(videos).appendTo( "#video-list" );
+    console.log(videos.length);
+    videos.forEach(function()
+    {
+        $(videos).appendTo( "#video-list" );
+    });
 });
