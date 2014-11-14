@@ -24,12 +24,12 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     {
         $("#video-list").append('<div id="video-block">' +
             '<img id="video-image-preview" src="../assets'+ videos[index]['imgName'] +'.png">' +
-            '</div>' +
             '<div id="video-info">' +
             '<div>'+ videos[index]['name'] +'</div>' +
             '<div>'+ videos[index]['author'] +'</div>' +
             '</div>' +
-            '<div id="video-info-votes">Replays:'+ videos[index]['playbacks'] +'</div>');
+            '<div id="video-info-votes">Replays:'+ videos[index]['playbacks'] +'</div>' +
+            '</div>');
 
 
         /*
