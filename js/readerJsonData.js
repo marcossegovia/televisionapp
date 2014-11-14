@@ -10,30 +10,32 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     $.each( data.videos, function( key, val ) {
         videos[numVideo] = new Array();
 
-/*        <div id="video-block">
-            <img id="video-image-preview" src="../assets/YouTube.png">
-                <div id="video-info">
-                    <div>Album name</div>
-                    <div>Artist name</div>
-                </div>
-                <div id="video-info-votes">Votes: #</div>
-                <div id="video-nav-arrows">
-                    <img id="video-arrows" src="../assets/up_ob.gif">
-                        <img id="video-arrows" src="../assets/ok_ob.gif">
-                            <img id="video-arrows" src="../assets/down_ob.gif">
-                            </div>
-                        </div>*/
-        videos[numVideo]['imgName']= "<li id='" + key + "'>" + val.imgName + "</li>";
-        videos[numVideo]['urlVideo']= "<li id='" + key + "'>" + val.urlVideo + "</li>";
-        videos[numVideo]['name']= "<li id='" + key + "'>" + val.name + "</li>" ;
-        videos[numVideo]['description']= "<li id='" + key + "'>" + val.description + "</li>" ;
-        videos[numVideo]['playbacks']= "<li id='" + key + "'>" + val.playbacks + "</li>" ;
-        videos[numVideo]['author']= "<li id='" + key + "'>" + val.author + "</li>" ;
+
+        videos[numVideo]['imgName']= val.imgName;
+        videos[numVideo]['urlVideo']= val.urlVideo;
+        videos[numVideo]['name']= val.name;
+        videos[numVideo]['description']= val.description ;
+        videos[numVideo]['playbacks']= val.playbacks;
+        videos[numVideo]['author']= val.author ;
         numVideo++;
     });
-    console.log(videos.length);
-    videos.forEach(function()
+
+    for (index = 0; index < videos.length; index++)
     {
-        $(videos).appendTo( "#video-list" );
-    });
+        $("#video-list").append('<div id="video-block">');
+        $("#video-list").append('<img id="video-image-preview" src="../assets"'+ videos[index]['imgName']+'>');
+        /*
+
+         <div id="video-info">
+         <div>Album name</div>
+         <div>Artist name</div>
+         </div>
+         <div id="video-info-votes">Votes: #</div>
+         <div id="video-nav-arrows">
+         <img id="video-arrows" src="../assets/up_ob.gif">
+         <img id="video-arrows" src="../assets/ok_ob.gif">
+         <img id="video-arrows" src="../assets/down_ob.gif">
+         </div>
+         </div>*/
+    }
 });
