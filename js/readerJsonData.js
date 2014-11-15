@@ -9,8 +9,6 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
     $.each( data.videos, function( key, val ) {
         videos[numVideo] = new Array();
-
-
         videos[numVideo]['imgName']= val.imgName;
         videos[numVideo]['urlVideo']= val.urlVideo;
         videos[numVideo]['name']= val.name;

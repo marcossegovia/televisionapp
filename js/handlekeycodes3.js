@@ -77,13 +77,13 @@ function handleKeyCode3(kc)
 
     function moveNextActiveVideo()
     {
-        $('#video-list-'+videoSelected-1+'').css({"border-style":""});
+        $('#video-list-'+videoSelected-1+'').css({"border-color": "#38302C"});
         $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
 
     function movePreviousActiveVideo()
     {
-        $('#video-list-'+videoSelected+1+'').css({"border-style":""});
+        $('#video-list-'+videoSelected+1+'').css({"border-color": "#38302C"});
         $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
 }
