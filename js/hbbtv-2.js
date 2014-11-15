@@ -92,7 +92,7 @@ function setKeyset(mask) {
  }
  */
 function showVideo(typ) {
-    var elem = document.getElementById('video-container');
+    var elem = document.getElementById('video-container-hbbtv');
     var oldvid = document.getElementById('video');
     try {
         oldvid.stop();
