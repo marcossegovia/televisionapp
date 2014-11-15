@@ -50,6 +50,7 @@ function handleKeyCode3(kc)
 	  //alert("down");
 	  $("#log").append("down!");
 	  console.log("down!");
+       console.log(index);
       if(this.index<9)
       {
           this.index++;
@@ -77,13 +78,13 @@ function handleKeyCode3(kc)
 
     function moveNextActiveVideo()
     {
-        $('#video-list-'+this.index-1+'').css({});
-        $('#video-list-'+this.index+'').css({"border-style":solid, "border-color": rgba(210,180,12,1)});
+        $('#video-list-'+this.index-1+'').css({"border-style":"none"});
+        $('#video-list-'+this.index+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
 
     function movePreviousActiveVideo()
     {
-        $('#video-list-'+this.index+1+'').css({"border-style":none});
-        $('#video-list-'+this.index+'').css({"border-style":solid, "border-color": rgba(210,180,12,1)});
+        $('#video-list-'+this.index+1+'').css({"border-style":"none"});
+        $('#video-list-'+this.index+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
 }
