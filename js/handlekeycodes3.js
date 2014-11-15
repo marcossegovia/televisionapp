@@ -1,9 +1,9 @@
-var index=0;
+var videoSelected=0;
 
 function handleKeyCode3(kc)
 {
   //alert('key');
-	console.log(index);
+	console.log(videoSelected);
   switch (kc) {
 
     case kc.keyCode == 16:
@@ -40,9 +40,9 @@ function handleKeyCode3(kc)
 	  //alert("up");
 	  $("#log").append("up!");
 	  console.log("up!");
-      if(this.index>0)
+      if(videoSelected>0)
       {
-          this.index--;
+          videoSelected--;
           movePreviousActiveVideo()
       }
 	  break;
@@ -50,9 +50,9 @@ function handleKeyCode3(kc)
 	  //alert("down");
 	  $("#log").append("down!");
 	  console.log("down!");
-      if(this.index<9)
+      if(videoSelected<9)
       {
-          this.index++;
+          videoSelected++;
           moveNextActiveVideo()
       }
 
@@ -77,13 +77,13 @@ function handleKeyCode3(kc)
 
     function moveNextActiveVideo()
     {
-        $('#video-list-'+this.index-1+'').css({"border-style":""});
-        $('#video-list-'+this.index+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
+        $('#video-list-'+videoSelected-1+'').css({"border-style":""});
+        $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
 
     function movePreviousActiveVideo()
     {
-        $('#video-list-'+this.index+1+'').css({"border-style":""});
-        $('#video-list-'+this.index+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
+        $('#video-list-'+videoSelected+1+'').css({"border-style":""});
+        $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
 }
