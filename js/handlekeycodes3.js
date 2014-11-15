@@ -75,15 +75,15 @@ function handleKeyCode3(kc)
 
     function moveNextActiveVideo()
     {
-        $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 2px"});
+        $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 3px"});
         videoSelected=videoSelected+1;
-        $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
+        $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
     }
 
     function movePreviousActiveVideo()
     {
-        $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 2px"});
+        $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 3px"});
         videoSelected = videoSelected-1;
-        $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
+        $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
     }
 }
