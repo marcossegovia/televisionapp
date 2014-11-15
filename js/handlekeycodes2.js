@@ -1,3 +1,5 @@
+
+
 function handleKeyCode2(kc)
 {
   //alert('key');
@@ -61,5 +63,7 @@ function handleKeyCode2(kc)
 	  console.log("exit!");
 	  closeApp();
 	  break; 
-	}	
+	}
+
+
 }

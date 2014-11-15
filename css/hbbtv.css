@@ -160,7 +160,7 @@ a:focus {
     margin-right: 25px;
 }
 
-#video-block{
+.video-block{
     display: inline-flex;
     height: 115px;
     width: 600px;
@@ -169,9 +169,8 @@ a:focus {
     float: left;
     font-size:16px;
     margin-bottom: 5px;
-
-
 }
+
 
 #video-info{
     padding-top: 22px;
