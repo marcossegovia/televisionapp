@@ -128,8 +128,8 @@ a:focus {
 #buttons-menu{
     display: inline-flex;
     position: fixed;
-    bottom: 35px;
-    left: 100px;
+    bottom: 43px;
+    left: 110px;
     text-align: center;
     background-color: #38302c ;
     color: #eeb527;
@@ -163,7 +163,7 @@ a:focus {
 .video-block{
     display: inline-flex;
     height: 115px;
-    width: 600px;
+    width: 609px;
     background-color: #38302c;
     color: #eeb527;
     float: left;
@@ -236,6 +236,9 @@ a:focus {
     padding-top: 1%;
     padding-bottom: 1%;
     height: 620px;
+    width: 354px;
+    margin-left: 620px;
+
 
 }
 
