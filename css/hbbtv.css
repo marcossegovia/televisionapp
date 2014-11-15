@@ -179,9 +179,23 @@ a:focus {
 
 }
 
-#video-info-container ul li
+#users-container
 {
-    text-decoration: none;
+    font-size: 16px;
+}
+#users-container li
+{
+    list-style-type: none;
+}
+
+#video-info-container
+{
+    font-size: 17px;
+}
+
+#video-info-container div ul li
+{
+    list-style-type: none;
 }
 
 #video-nav-arrows{
