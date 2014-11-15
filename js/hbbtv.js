@@ -110,12 +110,12 @@ function showVideo(typ, location) {
     // ignore
   }
   var mtype = typ ? 'video/mp4' : 'video/broadcast';
-  var ihtml = '<object id="video" type="'+mtype+'/object>';
+  /*var ihtml = '<object id="video" type="'+mtype+'/object>';
   elem.style.left = '0px';
   elem.style.top = '0px';
   elem.style.width = '1280px';
   elem.style.height = '720px';
-  elem.innerHTML = ihtml;
+  elem.innerHTML = ihtml;*/
   var succss = false;
   var phase = 1;
   try {
