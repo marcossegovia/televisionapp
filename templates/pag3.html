@@ -36,6 +36,7 @@
         <!--<div id="video-container-hbbtv"></div>-->
          <img src="../assets/YouTube.png" id="video-preview-small">
         <div id="users-container"></div>
+        <div id="video-info-container"></div>
       </section>
 
 
@@ -65,6 +66,15 @@
       window.onload = function()
       {
           $('#video-list-0').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
+          $("#video-info-container").append('<div>' +
+                  '<ul>' +
+                  '<li>'+ videos[0]['name'] +'</li>' +
+                  '<li>'+ videos[0]['author'] +'</li>' +
+                  '<li>'+ videos[0]['playbacks'] +'</li>' +
+                  '<li>'+ videos[0]['description'] +'</li>' +
+                  '</ul>' +
+                  '</div>');
+
           registerKeyEventListener();
       }
       function registerKeyEventListener() {

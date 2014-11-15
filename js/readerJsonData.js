@@ -1,10 +1,11 @@
 /**
  * Created by Marcos on 13/11/14.
  */
+var videos = new Array();
 
 $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
-    var videos = new Array();
+
     var numVideo=0;
 
     $.each( data.videos, function( key, val ) {
@@ -39,9 +40,11 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     }
 });
 
+var users = new Array();
+
 $.getJSON( "../assets/dataService/users.json", function( data ) {
 
-    var users = new Array();
+
 
     $.each( data.users, function( key, val ) {
 
@@ -58,21 +61,7 @@ $.getJSON( "../assets/dataService/users.json", function( data ) {
 
 
         /*
-         <div>
-         <ul>
-         <li>Alumne X</li>
-         <li>Alumne X</li>
-         <li>Alumne X</li>
-         </ul>
-         </div>
-         <div>
-         <ul>
-         <li>Album Name:</li>
-         <li>Artist Name:</li>
-         <li>Votes:</li>
-         <li>Description:</li>
-         </ul>
-         </div>
+
          <div id="video-nav-arrows">
          <img id="video-arrows" src="../assets/up_ob.gif">
          <img id="video-arrows" src="../assets/ok_ob.gif">

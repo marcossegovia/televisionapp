@@ -78,6 +78,7 @@ function handleKeyCode3(kc)
         $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 3px"});
         videoSelected=videoSelected+1;
         $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
+        updateVideoInfo();
     }
 
     function movePreviousActiveVideo()
@@ -85,5 +86,19 @@ function handleKeyCode3(kc)
         $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 3px"});
         videoSelected = videoSelected-1;
         $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
+        updateVideoInfo();
+    }
+
+    function updateVideoInfo()
+    {
+        $( "#video-info-container" ).empty();
+        $("#video-info-container").append('<div>' +
+            '<ul>' +
+            '<li>'+ videos[videoSelected]['name'] +'</li>' +
+            '<li>'+ videos[videoSelected]['author'] +'</li>' +
+            '<li>'+ videos[videoSelected]['playbacks'] +'</li>' +
+            '<li>'+ videos[videoSelected]['description'] +'</li>' +
+            '</ul>' +
+            '</div>');
     }
 }
