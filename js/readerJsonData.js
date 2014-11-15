@@ -40,3 +40,9 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
          </div>*/
     }
 });
+
+$.getJSON( "../assets/dataService/videos.json", function( data ) {
+
+
+
+});

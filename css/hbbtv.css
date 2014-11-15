@@ -33,6 +33,12 @@ body {
     height: 450px;
 }
 
+#video-container-hbbtv
+{
+    height: 250px;
+    width: 350px;
+}
+
 #oipf-container {
     visibility: hidden;
     height: 0;
