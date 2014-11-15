@@ -75,14 +75,14 @@ function handleKeyCode3(kc)
 
     function moveNextActiveVideo()
     {
-        $('#video-list-'+videoSelected+'').css({"border-color": "#38302C"});
+        $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 1px"});
         videoSelected=videoSelected+1;
         $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
 
     function movePreviousActiveVideo()
     {
-        $('#video-list-'+videoSelected+'').css({"border-color": "#38302C"});
+        $('#video-list-'+videoSelected+'').css({"borderColor": "#38302C"});
         videoSelected = videoSelected-1;
         $('#video-list-'+videoSelected+'').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
     }
