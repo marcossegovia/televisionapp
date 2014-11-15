@@ -17,7 +17,7 @@ function initVideo() {
     //console.log("ERROR: ", e);
   }
   try {
-    //document.getElementById('video').setFullScreen(false);
+    document.getElementById('video').setFullScreen(false);
   } catch (e) {
     //console.log("ERROR: ", e);
   }
