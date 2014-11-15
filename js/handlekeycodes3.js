@@ -77,7 +77,7 @@ function handleKeyCode3(kc)
 
     function moveNextActiveVideo()
     {
-        $('#video-list-'+this.index-1+'').css({"border-style":none});
+        $('#video-list-'+this.index-1+'').css({});
         $('#video-list-'+this.index+'').css({"border-style":solid, "border-color": rgba(210,180,12,1)});
     }
 
