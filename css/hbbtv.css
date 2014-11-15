@@ -160,6 +160,11 @@ a:focus {
     margin-right: 25px;
 }
 
+#video-list
+{
+    margin-top: 10px;
+}
+
 .video-block{
     display: inline-flex;
     height: 115px;
@@ -238,8 +243,6 @@ a:focus {
     height: 620px;
     width: 354px;
     margin-left: 620px;
-
-
 }
 
 
