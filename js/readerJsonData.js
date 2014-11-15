@@ -41,11 +41,11 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     }
 });
 
-$.getJSON( "../assets/dataService/videos.json", function( data ) {
+$.getJSON( "../assets/dataService/users.json", function( data ) {
 
     var users = new Array();
 
-    $.each( data.videos, function( key, val ) {
+    $.each( data.users, function( key, val ) {
 
         users.push( val.name);
     });
