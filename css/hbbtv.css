@@ -183,6 +183,7 @@ a:focus {
 {
     font-size: 16px;
     border: black solid 2px;
+    margin-bottom: 20px;
 }
 #users-container li
 {
