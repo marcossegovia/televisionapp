@@ -17,7 +17,7 @@ function initVideo() {
     //console.log("ERROR: ", e);
   }
   try {
-    document.getElementById('video').setFullScreen(false);
+    //document.getElementById('video').setFullScreen(false);
   } catch (e) {
     //console.log("ERROR: ", e);
   }
@@ -96,7 +96,7 @@ function Step(name) {
   }
 }
 */
-function showVideo(typ) {
+function showVideo(typ, location) {
   var elem = document.getElementById('video-container');
   var oldvid = document.getElementById('video');
   try {
