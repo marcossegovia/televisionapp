@@ -53,11 +53,9 @@ $.getJSON( "../assets/dataService/users.json", function( data ) {
 
     for (index = 0; index < users.length; index++)
     {
-        $("#users-container").append('<div>' +
-            '<ul>' +
+        $("#users-container").append('<ul>' +
             '<li>'+ users[index] +'</li>' +
-            '</ul>' +
-            '</div>');
+            '</ul>');
 
 
         /*
