@@ -64,6 +64,24 @@ function setKeyset(mask) {
         // ignore
     }
 }
+function stopVideo() {
+    var elem = document.getElementById('video-container');
+    var oldvid = document.getElementById('video');
+    if (oldvid) {
+        oldvid.onPlayStateChange = null;
+        try {
+            oldvid.stop();
+        } catch (e) {
+            // ignore
+        }
+        try {
+            oldvid.release();
+        } catch (e) {
+            // ignore
+        }
+    }
+    elem.innerHTML = '';
+}
 
 function showVideo(typ, page) {
     var elem = document.getElementById('video-container');
