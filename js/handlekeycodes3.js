@@ -92,6 +92,8 @@ function handleKeyCode3(kc)
             {
                 aux2 = aux-1;
             }
+            console.log(aux);
+            console.log(aux2);
             $('#video-list-'+aux+'').insertAfter('#video-list-'+aux2+'');
 
         }
@@ -103,6 +105,27 @@ function handleKeyCode3(kc)
         videoSelected = videoSelected-1;
         $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
         updateVideoInfo();
+
+        if(videoSelected>3)
+        {
+            $('#video-list-'+videoSelected+'').css({"visibility":"visible"});
+            var aux = videoSelected-4;
+            $('#video-list-'+aux+'').css({"visibility":"hidden"});
+
+
+            if(aux==0)
+            {
+               var aux2 = 9
+            }
+            else
+            {
+               var aux2 = aux-1;
+            }
+            console.log(aux);
+            console.log(aux2);
+            $('#video-list-'+aux+'').insertAfter('#video-list-'+aux2+'');
+
+        }
     }
 
     function updateVideoInfo()
