@@ -82,7 +82,7 @@ function showVideo(typ, page) {
 
     if(page==1 || page==2)
     {
-        var ihtml = '<object id="video" type="'+mtype+'" "><'+'/object>';
+        var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 720px;""><'+'/object>';
 
     }
     if(page==3)
