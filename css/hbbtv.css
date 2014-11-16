@@ -12,8 +12,10 @@ body {
 
 .areaQuad
 {
-    margin-left: 300px;
-    margin-top: 220px;
+    position:absolute;
+    left:500px;
+    top:250px;
+
 }
 
 #safe-area { /* no tocar */
@@ -72,31 +74,24 @@ a:focus {
 }
 
 
-#sync-message{
-    position: absolute;
+#sync-message
+{
     background-color: #38302c ;
     color: #eeb527;
     opacity: 0.9;
-
-    width: 32%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5%;
     border: 1px solid white;
     border-radius: 7px;
 
 }
 
-#OK-message{
+#OK-message
+{
 
     text-align: center;
     background-color: #38302c ;
     color: #eeb527;
     opacity: 0.9;
-
-
-    width: 32%;
     display: inline-flex;
     padding-left: 5%;
     padding-right: 5%;
@@ -104,6 +99,7 @@ a:focus {
     padding-bottom: 1%;
     border: 1px solid white;
     border-radius: 7px;
+    width:220px;
 
 }
 
