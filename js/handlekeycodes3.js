@@ -13,6 +13,8 @@ function handleKeyCode3(kc)
 	  $("#log").append("red!");
 	  console.log("red!");
         //$("#video").css({"visibility":"hidden"});
+         var vid = document.getElementById('video');
+         vid.stop();
         showVideo(true, 4);
 	  break;	
 	case VK_GREEN:
