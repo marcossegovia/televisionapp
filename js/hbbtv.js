@@ -98,6 +98,19 @@ function showVideo(typ, page) {
         elem.style.height = '250px';
         elem.innerHTML = ihtml;
     }
+    //Video Broadband/Youtube
+    if(page==4)
+    {
+        //$("#video-container-youtube").empty();
+        //$("#video-container-youtube").append('<iframe width="350" height="250" src="http://www.youtube.com/v/' +videos[videoSelected]['urlVideo']+ '?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
+        var ihtml ='<embed id="playerid" width="350px" height="200px" allowfullscreen="true" allowscriptaccess="always" quality="default" bgcolor="#000000" name="playerid" style="" src="http://www.youtube.com/v/'+videos[videoSelected]['urlVideo']+'?enablejsapi=1&version=3&playerapiid=ytplayer" type="application/x-shockwave-flash">';
+        elem.style.left = '0px';
+        elem.style.top = '0px';
+        elem.style.width = '350px';
+        elem.style.height = '250px';
+        elem.innerHTML = ihtml;
+        //$("#video-container-youtube").show();
+    }
 
     var succss = false;
     var phase = 1;
