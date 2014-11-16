@@ -104,25 +104,14 @@ function handleKeyCode3(kc)
         $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
         updateVideoInfo();
 
-        if(videoSelected>3)
+        if(videoSelected<6)
         {
             $('#video-list-'+videoSelected+'').css({"visibility":"visible"});
-            var aux = videoSelected-4;
+            var aux = videoSelected+4;
             $('#video-list-'+aux+'').css({"visibility":"hidden"});
-
-
-            if(aux==0)
-            {
-               var aux2 = 9;
-            }
-            else
-            {
-               var aux2 = aux-1;
-            }
-            console.log(aux);
-            console.log(aux2);
-            $("#t1").insertAfter("#be_top");
-            $('#video-list-'+aux+'').insertAfter('#video-list-'+aux2+'');
+            var aux2
+            aux2 = videoSelected+1;
+            $('#video-list-'+videoSelected+'').insertBefore('#video-list-'+aux2+'');
 
         }
     }
