@@ -9,10 +9,14 @@ function handleKeyCode3(kc)
     case kc.keyCode == 16:
 
         break;
-    case VK_RED:
+      case VK_RED:
 	  alert("red");
 	  $("#log").append("red!");
 	  console.log("red!");
+        $("#video").css({"visibility":"hidden"});
+        $("#video-container-youtube").empty();
+        $("#video-container-youtube").append('<iframe style="visibility: hidden" width="350" height="250" src="http://www.youtube.com/v/' +videos[videoSelected]['urlVideo']+ '?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
+        $("#video-container-youtube").show();
 	  break;	
 	case VK_GREEN:
 	  alert("green");

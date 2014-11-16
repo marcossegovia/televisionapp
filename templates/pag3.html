@@ -34,7 +34,7 @@
 
         <!-- video container -->
         <div id="video-container"></div>
-        <iframe style="visibility: hidden" width="350" height="250" src="" frameborder="0" allowfullscreen></iframe>
+        <div id="video-container-youtube"></div>
         Connected Users
         <div id="users-container"></div>
         Video Info
@@ -70,6 +70,7 @@
           initApp(3);
           registerKeyEventListener();
           initVideo();
+          $('#video-container-youtube').hide();
           $('#video-list-0').css({"border-style":"solid", "border-color": "rgba(210,180,12,1)"});
           $("#video-info-container").append('<div>' +
                   '<ul>' +

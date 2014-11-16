@@ -218,7 +218,8 @@ a:focus {
 
 #video-info-votes{
     padding-top: 22px;
-    padding-left: 50px;
+    padding-left: 25px;
+    color:white;
 }
 
 #video-preview-small{
