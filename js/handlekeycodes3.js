@@ -77,11 +77,11 @@ function handleKeyCode3(kc)
         videoSelected=videoSelected+1;
         $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
         updateVideoInfo();
-        if(videoSelected>4)
+        if(videoSelected>3)
         {
             $('#video-list-'+videoSelected+'').css({"visibility":"visible"});
-            $('#video-list-'+videoSelected-5+'').css({"visibility":"hidden"});
-            $('#video-list-'+videoSelected-5+'').insertAfter('#video-list-'+videoSelected+'');
+            $('#video-list-'+videoSelected-4+'').css({"visibility":"hidden"});
+            $('#video-list-'+videoSelected-4+'').insertAfter('#video-list-'+videoSelected+'');
 
         }
     }
