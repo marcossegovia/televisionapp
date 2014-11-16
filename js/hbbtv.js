@@ -1,19 +1,6 @@
 // globals
 var APP;
 
-window.onload = function() {
-    try {
-        initApp();
-        registerKeyEventListener();
-        initVideo();
-
-        $("#log").append("App initialized");
-        console.log("App initialized");
-    } catch (e) {
-        console.log("ERROR: ", e);
-    }
-}
-
 function initVideo() {
     try {
         document.getElementById('video').bindToCurrentChannel();
