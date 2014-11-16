@@ -27,7 +27,7 @@ function initApp(page) {
     setKeyset(0x1 + 0x2 + 0x4 + 0x8 + 0x10 + 0x100);
 
     // show video broadcast
-    showVideo(true, page);
+    showVideo(false, page);
 
     // set focus
     //document.getElementById("start").focus();
