@@ -82,7 +82,17 @@ function handleKeyCode3(kc)
             $('#video-list-'+videoSelected+'').css({"visibility":"visible"});
             var aux = videoSelected-4;
             $('#video-list-'+aux+'').css({"visibility":"hidden"});
-            $('#video-list-'+aux+'').insertAfter('#video-list-'+videoSelected+'');
+            var aux2;
+
+            if(videoSelected==0)
+            {
+                 aux2 = 9
+            }
+            else
+            {
+                aux2 = aux-1;
+            }
+            $('#video-list-'+aux+'').insertAfter('#video-list-'+aux2+'');
 
         }
     }
