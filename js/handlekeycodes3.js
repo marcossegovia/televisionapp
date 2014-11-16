@@ -15,7 +15,7 @@ function handleKeyCode3(kc)
         //$("#video").css({"visibility":"hidden"});
          var vid = document.getElementById('video');
          vid.stop();
-        showVideo(true, 4);
+        //showVideo(true, 4);
 	  break;	
 	case VK_GREEN:
 	  $("#log").append("green!");
