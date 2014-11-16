@@ -115,7 +115,7 @@ function handleKeyCode3(kc)
 
             if(aux==0)
             {
-               var aux2 = 9
+               var aux2 = 9;
             }
             else
             {
@@ -123,6 +123,7 @@ function handleKeyCode3(kc)
             }
             console.log(aux);
             console.log(aux2);
+            $("#t1").insertAfter("#be_top");
             $('#video-list-'+aux+'').insertAfter('#video-list-'+aux2+'');
 
         }
