@@ -6,34 +6,6 @@
     <meta http-equiv="content-type" content="application/vnd.hbbtv.xhtml+xml;charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="css/hbbtv.css"/>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script>
-
-          window.onload = function() {
-
-              initApp();
-              registerKeyEventListener();
-              initVideo();
-              redButtonWelcoming();
-          }
-
-          function registerKeyEventListener() {
-              document.addEventListener("keydown", function(e) {
-                  if (handleKeyCode(e.keyCode)) {
-                      e.preventDefault();
-                  }
-              }, false);
-          }
-
-          function redButtonWelcoming()
-          {
-              $('#button-message').delay(10000).fadeOut(1500);
-              $('#button-message').delay(5000).fadeIn(200);
-              $('#button-message').delay(5000).fadeOut(1500);
-              $('#button-message').delay(60000).fadeIn(200);
-              $('#button-message').delay(5000).fadeOut(1500);
-
-          }
-        </script>
       <script type="text/javascript" src="js/hbbtv.js"></script>
       <script type="text/javascript" src="js/keycodes.js"></script>
       <script type="text/javascript" src="js/handlekeycodes.js"></script>
@@ -60,7 +32,34 @@
 
   </body>
 
+  <script>
 
+      window.onload = function() {
+
+              initApp();
+              registerKeyEventListener();
+              initVideo();
+              redButtonWelcoming();
+      }
+
+      function registerKeyEventListener() {
+          document.addEventListener("keydown", function(e) {
+              if (handleKeyCode(e.keyCode)) {
+                  e.preventDefault();
+              }
+          }, false);
+      }
+
+      function redButtonWelcoming()
+      {
+          $('#button-message').delay(10000).fadeOut(1500);
+          $('#button-message').delay(5000).fadeIn(200);
+          $('#button-message').delay(5000).fadeOut(1500);
+          $('#button-message').delay(60000).fadeIn(200);
+          $('#button-message').delay(5000).fadeOut(1500);
+
+      }
+  </script>
 
 </html>
 

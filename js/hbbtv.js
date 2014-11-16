@@ -30,7 +30,7 @@ function initApp() {
     showVideo(false);
 
     // set focus
-    document.getElementById("start").focus();
+    //document.getElementById("start").focus();
 }
 
 function closeApp() {
@@ -62,36 +62,6 @@ function setKeyset(mask) {
         APP.privateData.keyset.value = mask;
     } catch (e) {
         // ignore
-    }
-}
-
-function registerKeyEventListener() {
-    document.addEventListener("keydown", function(e) {
-        if (handleKeyCode(e.keyCode)) {
-            e.preventDefault();
-        }
-    }, false);
-}
-
-function runStep(name) {
-    if (name=='start') {
-        showVideo(true);
-    } else if (name=='pause') {
-        setSpeed(0);
-    } else if (name=='play') {
-        setSpeed(1);
-    } else if (name=='ffwd') {
-        setSpeed(2);
-    } else if (name=='slowm') {
-        setSpeed(0.5);
-    } else if (name=='gopos30') {
-        gotoPos(30);
-    } else if (name=='gopos150') {
-        gotoPos(150);
-    } else if (name=='rewind') {
-        setSpeed(-1);
-    } else if (name=='stop') {
-        showVideo(false);
     }
 }
 
@@ -143,61 +113,4 @@ function showVideo(typ) {
     } catch (e) {
         // ignore
     }
-}
-
-function setSpeed(fact) {
-    try {
-        var vid = document.getElementById('video');
-        vid.play(fact);
-        setTimeout(function() {checkPlaySpeed(fact);}, 1000);
-    } catch (e) {
-        console.log("Cannot set playback speed to " + fact);
-        console.log("ERROR: ", e);
-    }
-}
-
-function checkPlaySpeed(fact) {
-    var vid = document.getElementById('video');
-    if (vid.playState === 3 || vid.playState === 4) {
-        console.log("Still buffering: waiting to check reported playback speed...");
-        setTimeout(function() {checkPlaySpeed(fact);}, 1000);
-        return;
-    }
-    if (parseInt(fact)==parseInt(vid.speed)) {
-        console.log("Video playback speed should now be " + fact);
-    } else {
-        var addmsg = (fact == 0 || fact == 1) ? '' : '. Note: test is OK even though this test failed, as feature is not mandatory.';
-        console.log("Setting speed succeeded, but reported speed is " + vid.speed + addmsg);
-    }
-}
-
-function gotoPos(scnds) {
-    try {
-        var vid = document.getElementById('video');
-        vid.seek(scnds * 1000);
-        console.log("Waiting for playback to resume to check reported playback position...");
-        testPos(scnds);
-    } catch (e) {
-        console.log("Cannot change playback position");
-    }
-}
-
-function testPos(scnds) {
-    if (testTimeout) {
-        clearTimeout(testTimeout);
-    }
-    var vid = document.getElementById('video');
-    testTimeout = setTimeout(function() {
-        testTimeout = false;
-        if (vid.playState && (vid.playState == 2 || vid.playState == 3 || vid.playState == 4)) {
-            testPos(scnds); // delay test, we are not playing yet.
-            return;
-        }
-        var secs = isNaN(vid.playPosition) ? -1 : Math.floor(vid.playPosition/1000);
-        if (secs >=0 && secs >= (scnds - 2) && secs <= (scnds + 10)) {
-            console.log("Video playback position is at " + secs + " seconds");
-        } else {
-            console.log("Seek succeeded, but reported playbackposition is at " + secs + " seconds");
-        }
-    }, 2000);
 }

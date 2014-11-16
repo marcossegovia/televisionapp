@@ -1,5 +1,4 @@
 
-
 function handleKeyCode2(kc)
 {
   //alert('key');
