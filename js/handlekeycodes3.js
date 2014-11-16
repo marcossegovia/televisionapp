@@ -84,16 +84,14 @@ function handleKeyCode3(kc)
             $('#video-list-'+aux+'').css({"visibility":"hidden"});
             var aux2;
 
-            if(videoSelected==0)
+            if(aux==0)
             {
-                 aux2 = 9
+                 aux2 = 9;
             }
             else
             {
                 aux2 = aux-1;
             }
-            console.log(aux);
-            console.log(aux2);
             $('#video-list-'+aux+'').insertAfter('#video-list-'+aux2+'');
 
         }
