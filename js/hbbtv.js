@@ -109,7 +109,7 @@ function showVideo(typ) {
         // ignore
     }
     var mtype = typ ? 'video/mp4' : 'video/broadcast';
-    var ihtml = '<object id="video" type="'+mtype+'><'+'/object>';
+    var ihtml = '<object id="video" type="'+mtype+'" "><'+'/object>';
     elem.style.left = '0px';
     elem.style.top = '0px';
     elem.style.width = '1280px';
