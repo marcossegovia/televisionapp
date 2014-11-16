@@ -83,18 +83,22 @@ function showVideo(typ, page) {
     if(page==1 || page==2)
     {
         var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 720px;""><'+'/object>';
-
+        elem.style.left = '0px';
+        elem.style.top = '0px';
+        elem.style.width = '1280px';
+        elem.style.height = '720px';
+        elem.innerHTML = ihtml;
     }
     if(page==3)
     {
         var ihtml = '<object id="video" type="'+mtype+'" style=" position:absolute; width: 350px; height: 250px;""><'+'/object>';
-
+        elem.style.left = '0px';
+        elem.style.top = '0px';
+        elem.style.width = '350px';
+        elem.style.height = '250px';
+        elem.innerHTML = ihtml;
     }
-    elem.style.left = '0px';
-    elem.style.top = '0px';
-    elem.style.width = '1280px';
-    elem.style.height = '720px';
-    elem.innerHTML = ihtml;
+
     var succss = false;
     var phase = 1;
     try {
