@@ -151,8 +151,8 @@ a:focus {
 
 
 #video-image-preview{
-    max-height: 115px;
-    max-width: 125px;
+    width: 125px;
+    height: 115px;
     margin-right: 25px;
 }
 
@@ -163,13 +163,13 @@ a:focus {
 
 .video-block{
     display: inline-flex;
-    height: 115px;
+    height: 118px;
     width: 609px;
     background-color: #38302c;
     color: #eeb527;
     float: left;
     font-size:16px;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
     border-style:solid;
     border-color: #38302C;
 }
@@ -177,6 +177,7 @@ a:focus {
 
 #video-info{
     padding-top: 22px;
+    width:260px;
 
 }
 
