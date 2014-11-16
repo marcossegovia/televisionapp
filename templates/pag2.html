@@ -40,14 +40,17 @@
 
     <script>
 
+
         window.onload = function() {
 
+            initApp();
+            registerKeyEventListener();
+            initVideo();
             var randomNumber = Math.floor((Math.random() * 9000) + 1000);
 
             $('#sync-message').html('SYNC NUMB: '+randomNumber);
             console.log(randomNumber);
 
-            registerKeyEventListener();
         }
 
         function registerKeyEventListener() {
