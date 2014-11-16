@@ -16,6 +16,7 @@ function handleKeyCode(kc)
 	  alert("green");
 	  $("#log").append("green!");
 	  console.log("green!");
+
 	  break;	  
     case VK_YELLOW:	
 	  alert("yellow");
