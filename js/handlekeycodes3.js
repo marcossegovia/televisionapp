@@ -13,7 +13,7 @@ function handleKeyCode3(kc)
 	  $("#log").append("red!");
 	  console.log("red!");
         /* Reproducimos video Broadband y aumentamos en 1 el número de reproducciones. */
-        videos[videoSelected]['playbacks'] = videos[videoSelected]['playbacks'].value+1;
+        videos[videoSelected]['playbacks'] = parseInt(videos[videoSelected]['playbacks'])+1;
         $('#video-list-'+videoSelected+' #video-info-votes').empty();
         $('#video-list-'+videoSelected+' #video-info-votes').text('Rep: '+videos[videoSelected]['playbacks']);
 
