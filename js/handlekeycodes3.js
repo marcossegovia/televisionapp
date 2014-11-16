@@ -12,7 +12,14 @@ function handleKeyCode3(kc)
       case VK_RED:
 	  $("#log").append("red!");
 	  console.log("red!");
+        /* Reproducimos video Broadband y aumentamos en 1 el número de reproducciones. */
+        videos[videoSelected]['playbacks'] = videos[videoSelected]['playbacks']+1;
+        $('#video-list-'+videoSelected+' #video-info-votes').empty();
+        $('#video-list-'+videoSelected+' #video-info-votes').text(videos[videoSelected]['playbacks']);
+
+          
         //$("#video").css({"visibility":"hidden"});
+
           stopVideo();
         //showVideo(true, 4);
 	  break;	
