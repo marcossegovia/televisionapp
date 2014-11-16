@@ -6,10 +6,9 @@
     <meta http-equiv="content-type" content="application/vnd.hbbtv.xhtml+xml;charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="/televisionapp/css/hbbtv.css"/>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/televisionapp/js/hbbtv.js"></script>
-	<script type="text/javascript" src="/televisionapp/js/keycodes.js"></script>
-	<script type="text/javascript" src="/televisionapp/js/handlekeycodes2.js"></script>
-    <script type="text/javascript" src="/televisionapp/js/page2.js"></script>
+    <script type="text/javascript" src="../js/hbbtv.js"></script>
+	<script type="text/javascript" src="../js/keycodes.js"></script>
+	<script type="text/javascript" src="../js/handlekeycodes2.js"></script>
   </head>
 
   <body>
@@ -38,6 +37,28 @@
 
   </body>
 
+    <script>
+
+        initApp();
+        initVideo();
+        window.onload = function() {
+
+            var randomNumber = Math.floor((Math.random() * 9000) + 1000);
+
+            $('#sync-message').html('SYNC NUMB: '+randomNumber);
+            console.log(randomNumber);
+
+            registerKeyEventListener();
+        }
+
+        function registerKeyEventListener() {
+            document.addEventListener("keydown", function(e) {
+                if (handleKeyCode2(e.keyCode)) {
+                    e.preventDefault();
+                }
+            }, false);
+        }
+    </script>
 
 </html>
 
