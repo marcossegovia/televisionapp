@@ -73,6 +73,7 @@ a:focus {
 
 
 #sync-message{
+    position: absolute;
     background-color: #38302c ;
     color: #eeb527;
     opacity: 0.9;
