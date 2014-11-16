@@ -9,7 +9,6 @@
       <script type="text/javascript" src="js/hbbtv.js"></script>
       <script type="text/javascript" src="js/keycodes.js"></script>
       <script type="text/javascript" src="js/handlekeycodes.js"></script>
-      <script type="text/javascript" src="js/controllerButton.js"></script>
   </head>
   <body>
   
@@ -36,17 +35,11 @@
   <script>
 
       window.onload = function() {
-          try {
+      
               initApp();
               registerKeyEventListener();
               initVideo();
               redButtonWelcoming();
-
-              $("#log").append("App initialized");
-              console.log("App initialized");
-          } catch (e) {
-              console.log("ERROR: ", e);
-          }
       }
 
       function registerKeyEventListener() {
