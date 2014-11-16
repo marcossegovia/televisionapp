@@ -80,8 +80,9 @@ function handleKeyCode3(kc)
         if(videoSelected>3)
         {
             $('#video-list-'+videoSelected+'').css({"visibility":"visible"});
-            $('#video-list-'+videoSelected-4+'').css({"visibility":"hidden"});
-            $('#video-list-'+videoSelected-4+'').insertAfter('#video-list-'+videoSelected+'');
+            var aux = videoSelected-4;
+            $('#video-list-'+aux+'').css({"visibility":"hidden"});
+            $('#video-list-'+aux+'').insertAfter('#video-list-'+videoSelected+'');
 
         }
     }
