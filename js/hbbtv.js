@@ -14,7 +14,7 @@ function initVideo() {
     }
 }
 
-function initApp() {
+function initApp(page) {
     try {
         APP = document.getElementById('oipfAppMan').getOwnerApplication(document);
         APP.show();
@@ -27,7 +27,7 @@ function initApp() {
     setKeyset(0x1 + 0x2 + 0x4 + 0x8 + 0x10 + 0x100);
 
     // show video broadcast
-    showVideo(false);
+    showVideo(false, page);
 
     // set focus
     //document.getElementById("start").focus();
@@ -65,7 +65,7 @@ function setKeyset(mask) {
     }
 }
 
-function showVideo(typ) {
+function showVideo(typ, page) {
     var elem = document.getElementById('video-container');
     var oldvid = document.getElementById('video');
     try {
@@ -79,7 +79,17 @@ function showVideo(typ) {
         // ignore
     }
     var mtype = typ ? 'video/mp4' : 'video/broadcast';
-    var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 500px; top: 100px; width: 600px; height: 450px;""><'+'/object>';
+
+    if(page==1 || page==2)
+    {
+        var ihtml = '<object id="video" type="'+mtype+'" "><'+'/object>';
+
+    }
+    if(page==3)
+    {
+        var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 500px; top: 100px; width: 600px; height: 450px;""><'+'/object>';
+
+    }
     elem.style.left = '0px';
     elem.style.top = '0px';
     elem.style.width = '1280px';
