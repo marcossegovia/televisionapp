@@ -10,31 +10,26 @@ function handleKeyCode3(kc)
 
         break;
       case VK_RED:
-	  alert("red");
 	  $("#log").append("red!");
 	  console.log("red!");
         $("#video").css({"visibility":"hidden"});
         $("#video-container-youtube").empty();
-        $("#video-container-youtube").append('<iframe style="visibility: hidden" width="350" height="250" src="http://www.youtube.com/v/' +videos[videoSelected]['urlVideo']+ '?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
+        $("#video-container-youtube").append('<iframe width="350" height="250" src="http://www.youtube.com/v/' +videos[videoSelected]['urlVideo']+ '?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
         $("#video-container-youtube").show();
 	  break;	
 	case VK_GREEN:
-	  alert("green");
 	  $("#log").append("green!");
 	  console.log("green!");
 	  break;	  
-    case VK_YELLOW:	
-	  alert("yellow");
+    case VK_YELLOW:
 	  $("#log").append("yellow!");
 	  console.log("yellow!");
 	  break;	
-    case VK_BLUE:	
-	  alert("blue");
+    case VK_BLUE:
 	  $("#log").append("blue!");
 	  console.log("blue!");
 	  break;		  
 	case VK_ENTER:
-	  //alert("enter");
 	  $("#log").append("enter!");
 	  console.log("enter!");
 	  //var aId = document.activeElement.getAttribute('id');
