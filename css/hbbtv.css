@@ -124,8 +124,8 @@ a:focus {
 #buttons-menu{
     display: inline-flex;
     position: fixed;
-    bottom: 43px;
-    left: 110px;
+    bottom: 35px;
+    left: 131px;
     text-align: center;
     background-color: #38302c ;
     color: #eeb527;
