@@ -79,9 +79,15 @@ function handleKeyCode3(kc)
 
     function moveNextActiveVideo()
     {
+        $( "#video-nav-arrows" ).remove();
         $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 3px"});
         videoSelected=videoSelected+1;
         $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
+        $('#video-list-'+videoSelected+'').append('<div id="video-nav-arrows">' +
+            '<img id="video-arrows" src="../assets/up_ob.gif">' +
+            '<img id="video-arrows" src="../assets/ok_ob.gif">' +
+            '<img id="video-arrows" src="../assets/down_ob.gif">' +
+            '</div>');
         updateVideoInfo();
         if(videoSelected>3)
         {
@@ -105,9 +111,15 @@ function handleKeyCode3(kc)
 
     function movePreviousActiveVideo()
     {
+        $( "#video-nav-arrows" ).remove();
         $('#video-list-'+videoSelected+'').css({"border":"#38302C solid 3px"});
         videoSelected = videoSelected-1;
         $('#video-list-'+videoSelected+'').css({"border":"rgba(210,180,12,1) solid 3px"});
+        $('#video-list-'+videoSelected+'').append('<div id="video-nav-arrows">' +
+            '<img id="video-arrows" src="../assets/up_ob.gif">' +
+            '<img id="video-arrows" src="../assets/ok_ob.gif">' +
+            '<img id="video-arrows" src="../assets/down_ob.gif">' +
+            '</div>');
         updateVideoInfo();
 
         if(videoSelected<6)
