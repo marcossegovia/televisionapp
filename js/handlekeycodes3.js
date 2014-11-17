@@ -22,7 +22,7 @@ function handleKeyCode3(kc)
 
         //$("#video").css({"visibility":"hidden"});
 
-        showVideo(true, 3);
+        showVideo(true);
 
 	  break;	
 	case VK_GREEN:

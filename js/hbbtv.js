@@ -64,7 +64,57 @@ function setKeyset(mask) {
         // ignore
     }
 }
+function showVideo(typ) {
+    var elem = document.getElementById('video-container');
+    var oldvid = document.getElementById('video');
+    try {
+        oldvid.stop();
+    } catch (e) {
+        // ignore
+    }
+    try {
+        oldvid.release();
+    } catch (e) {
+        // ignore
+    }
+    var mtype = typ ? 'video/mp4' : 'video/broadcast';
+    var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 500px; top: 100px; width: 600px; height: 450px;"><'+'/object>';
+    elem.style.left = '0px';
+    elem.style.top = '0px';
+    elem.style.width = '1280px';
+    elem.style.height = '720px';
+    elem.innerHTML = ihtml;
+    var succss = false;
+    var phase = 1;
+    try {
+        var videlem = document.getElementById('video');
+        if (videlem) {
+            if (typ) {
+                phase = 2;
+                videlem.data = 'http://itv.ard.de/video/timecode.php/video.mp4';
+                phase = 3;
+                videlem.play(1);
+                succss = true;
+            } else {
+                phase = 4;
+                videlem.bindToCurrentChannel();
+                succss = true;
+            }
+        }
+    } catch (e) {
+        // failed
+        console.log("ERROR: ", e);
+    }
 
+    fullscreen = false;
+    try {
+        videlem.setFullscreen(false);
+    } catch (e) {
+        // ignore
+    }
+}
+
+/*
 function showVideo(typ, page) {
     var elem = document.getElementById('video-container');
     var oldvid = document.getElementById('video');
@@ -111,7 +161,7 @@ function showVideo(typ, page) {
         elem.style.height = '250px';
         elem.innerHTML = ihtml;
         //$("#video-container-youtube").show();
-    }*/
+    }*//*
     var succss = false;
     var phase = 1;
     try {
@@ -140,4 +190,4 @@ function showVideo(typ, page) {
     } catch (e) {
         // ignore
     }
-}
+}*/
