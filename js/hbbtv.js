@@ -64,7 +64,7 @@ function setKeyset(mask) {
         // ignore
     }
 }
-function showVideo(typ) {
+function showVideo(typ, page) {
     var elem = document.getElementById('video-container');
     var oldvid = document.getElementById('video');
     try {
