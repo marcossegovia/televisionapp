@@ -19,19 +19,18 @@ function handleKeyCode3(kc)
         $('#video-list-'+videoSelected+' #video-info-votes').empty();
         $('#video-list-'+videoSelected+' #video-info-votes').text('Rep: '+videos[videoSelected]['playbacks']);
 
-
-        //$("#video").css({"visibility":"hidden"});
-
-        showVideo(true, 2);
+        showVideo(true, 3);
 
 	  break;	
 	case VK_GREEN:
 	  $("#log").append("green!");
 	  console.log("green!");
+      setSpeed(0);
 	  break;	  
     case VK_YELLOW:
 	  $("#log").append("yellow!");
 	  console.log("yellow!");
+        showVideo(false, 3);
 	  break;	
     case VK_BLUE:
 	  $("#log").append("blue!");
@@ -40,8 +39,6 @@ function handleKeyCode3(kc)
 	case VK_ENTER:
 	  $("#log").append("enter!");
 	  console.log("enter!");
-	  //var aId = document.activeElement.getAttribute('id');
-	  //runStep(aId);
 	  break;
 	case VK_UP:
 	  //alert("up");
