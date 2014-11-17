@@ -112,7 +112,6 @@ function showVideo(typ, page) {
         elem.innerHTML = ihtml;
         //$("#video-container-youtube").show();
     }*/
-
     var succss = false;
     var phase = 1;
     try {
