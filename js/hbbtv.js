@@ -78,12 +78,12 @@ function showVideo(typ, page) {
         // ignore
     }
     var mtype = typ ? 'video/mp4' : 'video/broadcast';
-    var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; left: 500px; top: 100px; width: 350px; height: 250px;"><'+'/object>';
+    var ihtml = '<object id="video" type="'+mtype+'" style="position: absolute; width: 350px; height: 250px;"><'+'/object>';
 
     elem.style.left = '0px';
     elem.style.top = '0px';
-    elem.style.width = '1280px';
-    elem.style.height = '720px';
+    elem.style.width = '350px';
+    elem.style.height = '250px';
     elem.innerHTML = ihtml;
     var succss = false;
     var phase = 1;
