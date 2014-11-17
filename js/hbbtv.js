@@ -115,6 +115,17 @@ function showVideo(typ, page) {
     }
 }
 
+function setSpeed(fact) {
+    try {
+        var vid = document.getElementById('video');
+        vid.play(fact);
+        setTimeout(function() {checkPlaySpeed(fact);}, 1000);
+    } catch (e) {
+        console.log("Cannot set playback speed to " + fact);
+        console.log("ERROR: ", e);
+    }
+}
+
 /*
 function showVideo(typ, page) {
     var elem = document.getElementById('video-container');
