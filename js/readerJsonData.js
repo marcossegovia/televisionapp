@@ -75,10 +75,6 @@ $.getJSON( "../assets/dataService/users.json", function( data ) {
 
         /*
 
-         <div id="video-nav-arrows">
-         <img id="video-arrows" src="../assets/up_ob.gif">
-         <img id="video-arrows" src="../assets/ok_ob.gif">
-         <img id="video-arrows" src="../assets/down_ob.gif">
-         </div>*/
+         */
     }
 });
