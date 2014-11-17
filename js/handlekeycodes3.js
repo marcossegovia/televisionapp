@@ -19,7 +19,7 @@ function handleKeyCode3(kc)
         $('#video-list-'+videoSelected+' #video-info-votes').empty();
         $('#video-list-'+videoSelected+' #video-info-votes').text('Rep: '+videos[videoSelected]['playbacks']);
 
-        showVideo(true, 3);
+        showVideo(true);
 
 	  break;	
 	case VK_GREEN:
@@ -30,7 +30,7 @@ function handleKeyCode3(kc)
     case VK_YELLOW:
 	  $("#log").append("yellow!");
 	  console.log("yellow!");
-        showVideo(false, 3);
+        showVideo(false);
 	  break;	
     case VK_BLUE:
 	  $("#log").append("blue!");

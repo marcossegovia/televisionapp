@@ -14,7 +14,7 @@ function initVideo() {
     }
 }
 
-function initApp(page) {
+function initApp() {
     try {
         APP = document.getElementById('oipfAppMan').getOwnerApplication(document);
         APP.show();
@@ -27,7 +27,7 @@ function initApp(page) {
     setKeyset(0x1 + 0x2 + 0x4 + 0x8 + 0x10 + 0x100);
 
     // show video broadcast
-    showVideo(false, page);
+    showVideo(false);
 
     // set focus
     //document.getElementById("start").focus();
@@ -64,7 +64,7 @@ function setKeyset(mask) {
         // ignore
     }
 }
-function showVideo(typ, page) {
+function showVideo(typ) {
     var elem = document.getElementById('video-container');
     var oldvid = document.getElementById('video');
     try {
