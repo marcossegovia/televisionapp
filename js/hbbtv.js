@@ -96,6 +96,7 @@ function showVideo(typ, page) {
         if (videlem) {
             if (typ) {
                 phase = 2;
+                alert("eeeh!");
                 videlem.data = 'http://itv.ard.de/video/timecode.php/video.mp4';
                 phase = 3;
                 videlem.play(1);
