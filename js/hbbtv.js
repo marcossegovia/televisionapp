@@ -107,9 +107,9 @@ function showVideo(typ, page) {
         console.log("ERROR: ", e);
     }
 
-    fullscreen = false;
+    fullscreen = true;
     try {
-        videlem.setFullscreen(false);
+        videlem.setFullscreen(true);
     } catch (e) {
         // ignore
     }
