@@ -22,8 +22,8 @@ function handleKeyCode3(kc)
 
         //$("#video").css({"visibility":"hidden"});
 
-          stopVideo();
-        //showVideo(true, 4);
+        showVideo(true, 3);
+
 	  break;	
 	case VK_GREEN:
 	  $("#log").append("green!");

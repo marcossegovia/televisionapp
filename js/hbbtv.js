@@ -64,24 +64,6 @@ function setKeyset(mask) {
         // ignore
     }
 }
-function stopVideo() {
-    var elem = document.getElementById('video-container');
-    var oldvid = document.getElementById('video');
-    if (oldvid) {
-        oldvid.onPlayStateChange = null;
-        try {
-            oldvid.stop();
-        } catch (e) {
-            // ignore
-        }
-        try {
-            oldvid.release();
-        } catch (e) {
-            // ignore
-        }
-    }
-    elem.innerHTML = '';
-}
 
 function showVideo(typ, page) {
     var elem = document.getElementById('video-container');
@@ -117,7 +99,7 @@ function showVideo(typ, page) {
         elem.innerHTML = ihtml;
     }
     //Video Broadband/Youtube
-    if(page==4)
+    /*if(page==4)
     {
         //$("#video-container-youtube").empty();
         //$("#video-container-youtube").append('<iframe width="350" height="250" src="http://www.youtube.com/v/' +videos[videoSelected]['urlVideo']+ '?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
@@ -129,7 +111,7 @@ function showVideo(typ, page) {
         elem.style.height = '250px';
         elem.innerHTML = ihtml;
         //$("#video-container-youtube").show();
-    }
+    }*/
 
     var succss = false;
     var phase = 1;
