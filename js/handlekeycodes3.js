@@ -88,10 +88,10 @@ function handleKeyCode3(kc)
             '<img id="video-arrows" src="../assets/down_ob.gif">' +
             '</div>');
         updateVideoInfo();
-        if(videoSelected>3)
+        if(videoSelected>2)
         {
             $('#video-list-'+videoSelected+'').css({"visibility":"visible"});
-            var aux = videoSelected-4;
+            var aux = videoSelected-3;
             $('#video-list-'+aux+'').css({"visibility":"hidden"});
             var aux2;
 
@@ -121,10 +121,10 @@ function handleKeyCode3(kc)
             '</div>');
         updateVideoInfo();
 
-        if(videoSelected<6)
+        if(videoSelected<7)
         {
             $('#video-list-'+videoSelected+'').css({"visibility":"visible"});
-            var aux = videoSelected+4;
+            var aux = videoSelected+3;
             $('#video-list-'+aux+'').css({"visibility":"hidden"});
             var aux2
             aux2 = videoSelected+1;

@@ -22,7 +22,7 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
     for (index = 0; index < videos.length; index++)
     {
-        if(index<4)
+        if(index<3)
         {
             $("#video-list").append('<div class="video-block" id="video-list-'+index+'">' +
                 '<img id="video-image-preview" src="../assets'+ videos[index]['imgName'] +'.png">' +
@@ -45,15 +45,9 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
                 '<div id="video-info-votes">Rep: '+ videos[index]['playbacks'] +'</div>' +
                 '</div>');
         }
-
-
-        /*
-         <div id="video-nav-arrows">
-             <img id="video-arrows" src="../assets/up_ob.gif">
-             <img id="video-arrows" src="../assets/ok_ob.gif">
-             <img id="video-arrows" src="../assets/down_ob.gif">
-         </div>*/
     }
+
+    $("video-list-0").css({"margin-top": "132px"});
 });
 
 var users = new Array();
