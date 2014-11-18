@@ -1,5 +1,6 @@
 // globals
 var APP;
+var broadcast;
 
 function initVideo() {
     try {

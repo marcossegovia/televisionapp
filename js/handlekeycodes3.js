@@ -20,6 +20,7 @@ function handleKeyCode3(kc)
         $('#video-list-'+videoSelected+' #video-info-votes').text('Rep: '+videos[videoSelected]['playbacks']);
 
         showVideo(true);
+        broadcast=false;
 
 	  break;	
 	case VK_GREEN:
@@ -31,10 +32,19 @@ function handleKeyCode3(kc)
 	  $("#log").append("yellow!");
 	  console.log("yellow!");
         showVideo(false);
+        broadcast=true;
 	  break;	
     case VK_BLUE:
 	  $("#log").append("blue!");
 	  console.log("blue!");
+        if(broadcast)
+        {
+            window.location = "/templates/fullScreenBroadcast.html";
+        }
+        else
+        {
+            window.location = "/templates/fullScreenBroadband.html";
+        }
 	  break;		  
 	case VK_ENTER:
 	  $("#log").append("enter!");
