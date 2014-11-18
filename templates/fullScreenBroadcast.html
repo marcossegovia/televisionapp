@@ -25,7 +25,7 @@
 
 <!-- place your code here -->
 <div id="safe-area">
-    <div id="button-message">Press <img id="red-button" src="assets/azul.png" /> to go back to the app</div>
+    <div id="button-message">Press <img id="red-button" src="../assets/azul.gif" /> to go back to the app</div>
 </div>
 
 </body>
@@ -38,6 +38,7 @@
         initApp();
         registerKeyEventListener();
         initVideo();
+        blueButtonBack();
 
     }
 
@@ -47,6 +48,11 @@
                 e.preventDefault();
             }
         }, false);
+    }
+
+    function blueButtonBack()
+    {
+        $('#button-message').delay(5000).fadeOut(1500);
     }
 </script>
 
