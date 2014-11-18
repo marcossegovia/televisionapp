@@ -56,6 +56,11 @@ a:focus {
     max-height: 50px !important;
 }
 
+#video-list-0
+{
+    margin-top: 132px;
+}
+
 #button-message{
     position: absolute;
     bottom: 10%;
