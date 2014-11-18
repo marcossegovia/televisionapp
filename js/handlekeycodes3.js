@@ -2,7 +2,6 @@
 function handleKeyCode3(kc)
 {
   //alert('key');
-	console.log(videoSelected);
   switch (kc) {
 
     case kc.keyCode == 16:
