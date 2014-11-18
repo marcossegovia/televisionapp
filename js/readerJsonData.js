@@ -24,7 +24,7 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
     {
         if(index<3)
         {
-            $("#video-list").append('<div class="video-block" id="video-list-'+index+'">' +
+            $("#video-list-videos").append('<div class="video-block" id="video-list-'+index+'">' +
                 '<img id="video-image-preview" src="../assets'+ videos[index]['imgName'] +'.png">' +
                 '<div id="video-info">' +
                 '<div>'+ videos[index]['name'] +'</div>' +
@@ -36,7 +36,7 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
         else
         {
 
-            $("#video-list").append('<div style="visibility: hidden"; class="video-block" id="video-list-'+index+'">' +
+            $("#video-list-videos").append('<div style="visibility: hidden"; class="video-block" id="video-list-'+index+'">' +
                 '<img id="video-image-preview" src="../assets'+ videos[index]['imgName'] +'.png">' +
                 '<div id="video-info">' +
                 '<div>'+ videos[index]['name'] +'</div>' +
@@ -49,7 +49,6 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
 });
 
-$('#video-list-0').css({"margin-top":"132px"});
 var users = new Array();
 
 $.getJSON( "../assets/dataService/users.json", function( data ) {
