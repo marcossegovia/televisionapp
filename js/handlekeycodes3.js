@@ -39,11 +39,11 @@ function handleKeyCode3(kc)
 	  console.log("blue!");
         if(broadcast)
         {
-            window.location = "/templates/fullscreenBroadcast.html";
+            window.location = "/televisionapp/templates/fullScreenBroadcast.html";
         }
         else
         {
-            window.location = "/templates/fullScreenBroadband.html";
+            window.location = "/televisionapp/templates/fullScreenBroadband.html";
         }
 	  break;		  
 	case VK_ENTER:
