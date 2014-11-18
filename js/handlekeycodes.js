@@ -8,7 +8,6 @@ function handleKeyCode(kc)
 
         break;
     case VK_RED:
-	  alert("red");
 	  $("#log").append("red!");
       window.location = "/televisionapp/templates/pag2.html";
 	  break;	
@@ -17,12 +16,10 @@ function handleKeyCode(kc)
 	  $("#log").append("green!");
 
 	  break;	  
-    case VK_YELLOW:	
-	  alert("yellow");
+    case VK_YELLOW:
 	  $("#log").append("yellow!");
 	  break;	
-    case VK_BLUE:	
-	  alert("blue");
+    case VK_BLUE:
 	  $("#log").append("blue!");
 	  break;		  
 	case VK_ENTER:
