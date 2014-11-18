@@ -49,6 +49,7 @@ $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
 });
 
+$('#video-list-0').css({"margin-top":"132px"});
 var users = new Array();
 
 $.getJSON( "../assets/dataService/users.json", function( data ) {
