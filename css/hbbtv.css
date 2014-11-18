@@ -227,7 +227,7 @@ a:focus {
 
 #video-nav-arrows{
     padding-top: 5px;
-    margin-left: 40px;
+    float:right;
 
 }
 
@@ -263,7 +263,7 @@ a:focus {
     height: 620px;
     width: 354px;
     margin-left: 620px;
-    margin-top: -149px;
+    margin-top: -135px;
 }
 
 
