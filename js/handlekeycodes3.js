@@ -1,4 +1,3 @@
-var videoSelected=0;
 
 function handleKeyCode3(kc)
 {
