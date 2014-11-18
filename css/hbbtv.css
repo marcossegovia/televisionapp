@@ -73,6 +73,23 @@ a:focus {
 
 }
 
+#button-message2{
+    position: absolute;
+    bottom: 10%;
+    width: 30%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid white;
+    border-radius: 7px;
+
+    background-color: #38302c ;
+    color: #eeb527;
+    opacity: 0.9;
+
+}
+
 
 #sync-message
 {
