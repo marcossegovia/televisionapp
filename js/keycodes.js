@@ -1,5 +1,7 @@
 ﻿// follow OIPF
 // each keycode on every application and every platform should have only one numeric number
+var videos = new Array();
+
 
 if (typeof(VK_LEFT) == 'undefined') {
 	var VK_LEFT = 0x25;

@@ -31,10 +31,7 @@ function handleKeyCode(kc)
 	case VK_ENTER:
 	  //alert("enter");
 	  $("#log").append("enter!");
-	  console.log("enter!");
       window.location = "/televisionapp/templates/pag2.html";
-	  //var aId = document.activeElement.getAttribute('id');
-	  //runStep(aId);
 	  break;
 	case VK_UP:
 	  //alert("up");

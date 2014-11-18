@@ -11,7 +11,6 @@ function handleKeyCode3(kc)
         break;
       case VK_RED:
 	  $("#log").append("red!");
-	  console.log("red!");
         /* Reproducimos video Broadband y aumentamos en 1 el número de reproducciones. */
 
           videos[videoSelected]['playbacks'] = parseInt(videos[videoSelected]['playbacks'])+1;
@@ -25,18 +24,15 @@ function handleKeyCode3(kc)
 	  break;	
 	case VK_GREEN:
 	  $("#log").append("green!");
-	  console.log("green!");
       setSpeed(0);
 	  break;	  
     case VK_YELLOW:
 	  $("#log").append("yellow!");
-	  console.log("yellow!");
         showVideo(false);
         broadcast=true;
 	  break;	
     case VK_BLUE:
 	  $("#log").append("blue!");
-	  console.log("blue!");
         if(broadcast)
         {
             window.location = "/televisionapp/templates/fullScreenBroadcast.html";
@@ -48,12 +44,10 @@ function handleKeyCode3(kc)
 	  break;		  
 	case VK_ENTER:
 	  $("#log").append("enter!");
-	  console.log("enter!");
 	  break;
 	case VK_UP:
 	  //alert("up");
 	  $("#log").append("up!");
-	  console.log("up!");
       if(videoSelected>0)
       {
           movePreviousActiveVideo()
@@ -62,7 +56,6 @@ function handleKeyCode3(kc)
 	case VK_DOWN:
 	  //alert("down");
 	  $("#log").append("down!");
-	  console.log("down!");
       if(videoSelected<9)
       {
           moveNextActiveVideo()
@@ -72,12 +65,10 @@ function handleKeyCode3(kc)
 	case VK_RIGHT:
 	  //alert("right");
 	  $("#log").append("right!");
-	  console.log("right!");
 	  break;
 	case VK_LEFT:
 	  //alert("left");
 	  $("#log").append("left!");
-	  console.log("left!");
 	  break;
 	case VK_0:
 	  alert("exit");

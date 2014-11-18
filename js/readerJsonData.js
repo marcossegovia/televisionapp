@@ -1,7 +1,7 @@
 /**
  * Created by Marcos on 13/11/14.
  */
-var videos = new Array();
+
 
 $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
