@@ -47,7 +47,6 @@ function handleKeyCode4(kc)
         case VK_0:
             alert("exit");
             $("#log").append("exit!");
-            console.log("exit!");
             closeApp();
             break;
     }
