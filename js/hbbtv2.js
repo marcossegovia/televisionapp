@@ -91,7 +91,7 @@ function showVideo(typ) {
         if (videlem) {
             if (typ) {
                 phase = 2;
-                videlem.data = '../assets/videos/'+videos[videoSelected]['urlVideo']+'.mp4';
+                videlem.data = '../assets/videos/'+stringVideoBroadband+'.mp4';
                 phase = 3;
                 videlem.play(1);
                 succss = true;

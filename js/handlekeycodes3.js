@@ -17,6 +17,7 @@ function handleKeyCode3(kc)
         $('#video-list-'+videoSelected+' #video-info-votes').text('Rep: '+videos[videoSelected]['playbacks']);
 
         showVideo(true);
+        setStringVideoBroadband(videos[videoSelected]['urlVideo']);
         broadcast=false;
 
 	  break;	
