@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//HbbTV//1.1.1//EN" "http://www.hbbtv.org/dtd/HbbTV-1.1.1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>HbbTV basic template</title>
+    <meta http-equiv="content-type" content="application/vnd.hbbtv.xhtml+xml;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/televisionapp/css/hbbtv.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/televisionapp/js/hbbtv2.js"></script>
+    <script type="text/javascript" src="/televisionapp/js/keycodes.js"></script>
+    <script type="text/javascript" src="/televisionapp/js/handlekeycodes4.js"></script>
+</head>
+
+<body>
+
+
+<!-- video container -->
+<div id="video-container"></div>
+
+<!-- oipf objects container -->
+<div id="oipf-container">
+    <object id="oipfAppMan" type="application/oipfApplicationManager"></object>
+    <object id="oipfConfig" type="application/oipfConfiguration"></object>
+</div>
+
+<!-- place your code here -->
+<div id="safe-area">
+
+    <div class ="areaQuad">
+        <div id="sync-message"></div>
+
+        <!-- Podem canviar div OK per foto directament -->
+        <div id="OK-message">Press <div id="button-OK">OK</div> to continue</div>
+    </div>
+
+
+</div>
+
+</body>
+
+<script>
+
+
+    window.onload = function() {
+
+        initApp();
+        registerKeyEventListener();
+        initVideo();
+        showVideo(true);
+
+    }
+
+    function registerKeyEventListener() {
+        document.addEventListener("keydown", function(e) {
+            if (handleKeyCode2(e.keyCode)) {
+                e.preventDefault();
+            }
+        }, false);
+    }
+</script>
+
+</html>
