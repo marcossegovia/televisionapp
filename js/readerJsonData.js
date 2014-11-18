@@ -2,11 +2,11 @@
  * Created by Marcos on 13/11/14.
  */
 
-
+videos = new Array();
 
 $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
-    videos = new Array();
+
     var numVideo=0;
 
     $.each( data.videos, function( key, val ) {
