@@ -11,6 +11,33 @@
 	<script type="text/javascript" src="/televisionapp/js/handlekeycodes3.js"></script>
     <script type="text/javascript" src="/televisionapp/js/readerJsonData.js"></script>
       <script type="text/javascript" src="/televisionapp/js/videoBroadband.js"></script>
+      <style type="text/css">
+          /* rotator in-page placement */
+          div.rotator {
+              position:relative;
+              height:345px;
+              display:none;
+          }
+          /* rotator css */
+          div.rotator ul {
+              margin:0;
+              padding:0;
+          }
+          div.rotator ul li {
+              float:left;
+              position:absolute;
+              list-style: none;
+          }
+          /* rotator image style */
+          div.rotator ul li img {
+              border:1px solid #ccc;
+              padding: 4px;
+              background: #FFF;
+          }
+          div.rotator ul li.show {
+              z-index:500;
+          }
+      </style>
   </head>
 
   <body>
@@ -27,6 +54,13 @@
     <div id="safe-area">
 
       <section id="video-list">
+          <div class="rotator">
+              <ul>
+                  <li class="show"><a href="http://www.planet-sports.com"><img src="../assets/publi/image-1.jpg" width="609" height="118"  alt="pic1" /></a></li>
+                  <li><a href="http://www.planet-sports.com"><img src="../assets/publi/image-2.jpg" width="609" height="118"  alt="pic2" /></a></li>
+                  <li><a href="http://www.planet-sports.com"><img src="../assets/publi/image-3.jpg" width="609" height="118"  alt="pic3" /></a></li>
+              </ul>
+          </div>
 
 
       </section>

@@ -34,16 +34,16 @@
 <script>
 
 
-    window.onload = function() {
-
+    $(document).ready(function() {
         initApp();
         registerKeyEventListener();
         initVideo();
         showVideo(true);
         blueButtonBack();
         alert(stringVideoBroadband);
+    });
 
-    }
+
 
     function registerKeyEventListener() {
         document.addEventListener("keydown", function(e) {
