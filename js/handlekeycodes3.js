@@ -39,7 +39,7 @@ function handleKeyCode3(kc)
 	  console.log("blue!");
         if(broadcast)
         {
-            window.location = "/templates/fullScreenBroadcast.html";
+            window.location = "/templates/fullscreenBroadcast.html";
         }
         else
         {
