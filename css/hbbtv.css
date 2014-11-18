@@ -58,7 +58,7 @@ a:focus {
 
 #video-list-videos
 {
-    margin-top: 132px;
+    padding-top: 132px;
 }
 
 #button-message{
@@ -263,6 +263,7 @@ a:focus {
     height: 620px;
     width: 354px;
     margin-left: 620px;
+    margin-top: -149px;
 }
 
 
