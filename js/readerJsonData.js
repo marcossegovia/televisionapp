@@ -3,9 +3,10 @@
  */
 
 
+
 $.getJSON( "../assets/dataService/videos.json", function( data ) {
 
-
+    videos = new Array();
     var numVideo=0;
 
     $.each( data.videos, function( key, val ) {
